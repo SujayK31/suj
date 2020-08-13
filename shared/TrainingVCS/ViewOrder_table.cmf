@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<!-- salt:60f16d4d-901d-4de6-b336-fe1e86ee5946 -->
+<!-- salt:cdd2897a-6932-484e-987c-aae529cf6573 -->
 <metadata name="ViewOrder" path="/shared/TrainingVCS/ViewOrder" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="NONE">
   <columns>
     <column name="OrderID" nullable="true">
@@ -10,12 +10,6 @@
     </column>
     <column name="ProductID" nullable="true">
       <datatype type="INTEGER" minValue="-2147483648" maxValue="2147483647"/>
-      <security>
-        <owner user="admin" domain="composite"/>
-      </security>
-    </column>
-    <column name="Discount" nullable="true">
-      <datatype type="DECIMAL" maxDigits="12" minFractionalDigits="2" maxFractionalDigits="2"/>
       <security>
         <owner user="admin" domain="composite"/>
       </security>
@@ -167,7 +161,6 @@
   <attribute name="SQL" type="STRING">SELECT 
     orderdetails.orderid OrderID, 
     orderdetails.productid ProductID, 
-    orderdetails.discount Discount, 
     customers.companyname CompanyName, 
     customers.contactfirstname CustomerContactFirstName, 
     customers.contactlastname CustomerContactLastName, 
@@ -182,7 +175,7 @@ FROM
   <attribute name="creatorUserDomain" type="STRING"/>
   <attribute name="creatorUserName" type="STRING"/>
   <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
-  <attribute name="lastModifiedDate" type="LONG">1597349958943</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1597350935650</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserName" type="STRING">admin</attribute>
   <attribute name="model" type="NULL"/>
